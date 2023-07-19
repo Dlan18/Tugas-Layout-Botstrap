@@ -60,8 +60,9 @@
       .navbar {
         padding: 10px;
       }
-      h3 {
+      h2 {
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: 28px;
         letter-spacing: 2.5px;
       }
       td {
@@ -83,13 +84,18 @@
     <nav class="navbar navbar-light shadow mb-5 bg-white z-3 justify-content-center sticky-top">
       <a class="navbar-brand d-flex align-items-center" href="">
         <img src="logo.jpeg" width="37" height="auto" class="me-3" alt="" />
-        <h3 class="fw-bold m-0">SMKN 10 JKT</h3>
+        <h2 class="fw-bold m-0">SMKN 10 JKT</h2>
       </a>
     </nav>
     
     <div class="d-flex flex-wrap justify-content-center">
       <form class="m-3 col-4" method="POST" action="">
-        <h2 class="mb-3 fw-bold">Input Data</h2>
+        <h2 class="d-flex justify-content-center align-items-center fw-bold"><svg class="me-3" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-person-vcard" viewBox="0 0 16 16">
+          <path d="M5 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm4-2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5ZM9 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4A.5.5 0 0 1 9 8Zm1 2.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5Z"/>
+          <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2ZM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H8.96c.026-.163.04-.33.04-.5C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1.006 1.006 0 0 1 1 12V4Z"/>
+        </svg>XI RPL'56</h2>
+        <hr>
+        <h3 class="mt-4 mb-4 fw-bold">Input Data:</h3>
         <div class="mb-3">
           <label for="nama">Nama</label>
           <input id="nama" type="text" name="nama" class="form-control" required />
@@ -99,7 +105,6 @@
           <input id="nilai" type="number" name="nilai" class="form-control" required />
         </div>
         <button class="btn btn-primary rounded-1" style="letter-spacing: 0.5px" type="submit">KIRIM</button>
-        <hr />
       </form>
 
       <table class="table-bordered border-dark text-center m-3 col-8 col-sm-7 ">
