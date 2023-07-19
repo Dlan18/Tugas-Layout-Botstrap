@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RANKING XI RPL</title>
+    <link rel="icon" href="logo.jpeg" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+        font-family: sans-serif;
+      }
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+      ::-webkit-scrollbar-track {
+        background-color: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background-color: #aaa;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background-color: #0d6efd;
+      }
+      #button {
+        width: 50px;
+        height: 50px;
+        border-radius: .7rem;
+        position: fixed;
+        bottom: 25px;
+        left: 25px;
+        cursor: pointer;
+        transition: background-color .3s, 
+          opacity .5s, visibility .5s, scale .3s ease;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 1000;
+      }
+      #button svg{
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      #button:hover {
+        scale: .95;
+      }
+      #button:active {
+        scale: .83;
+      }
+      #button.show {
+        opacity: 1;
+        visibility: visible;
+      }
+      .navbar {
+        padding: 10px;
+      }
+      h3 {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        letter-spacing: 2.5px;
+      }
+      td {
+        padding: 5px;
+      }
+      th {
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <a id="button" class="d-inline-block bg-primary" title="Kembali Ke Atas">
+      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-arrow-up-short" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"/>
+      </svg>
+      </svg>
+    </a>
+
+    <nav class="navbar navbar-light shadow mb-5 bg-white z-3 justify-content-center sticky-top">
+      <a class="navbar-brand d-flex align-items-center" href="">
+        <img src="logo.jpeg" width="37" height="auto" class="me-3" alt="" />
+        <h3 class="fw-bold m-0">SMKN 10 JKT</h3>
+      </a>
+    </nav>
+    
+    <div class="d-flex flex-wrap justify-content-center">
+      <form class="m-3 col-4" method="POST" action="">
+        <h2 class="mb-3 fw-bold">Input Data</h2>
+        <div class="mb-3">
+          <label for="nama">Nama</label>
+          <input id="nama" type="text" name="nama" class="form-control" required />
+        </div>
+        <div class="mb-4">
+          <label for="nilai">Nilai</label>
+          <input id="nilai" type="number" name="nilai" class="form-control" required />
+        </div>
+        <button class="btn btn-primary rounded-1" style="letter-spacing: 0.5px" type="submit">KIRIM</button>
+        <hr />
+      </form>
+
+      <table class="table-bordered border-dark text-center m-3 col-8 col-sm-7 ">
+        <thead class="bg-primary text-light">
+          <tr>
+            <th>No.</th>
+            <th>Nama</th>
+            <th>Nilai</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>ABDURRAHMAN FAIZ</td>
+            <td>80</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>ACHMAD FAUZAN</td>
+            <td>80</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>ADYSTYA ANANDITA</td>
+            <td>80</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>AISYAH SALSABILA</td>
+            <td>80</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>ALDO AHMAD HIRZI</td>
+            <td>80</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>ALI ZAINAL ABIDIN SHAHAB</td>
+            <td>80</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>ALLYA BUNGA LESTARI</td>
+            <td>80</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>ANANDA DAVID SAPUTRA</td>
+            <td>80</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>ANIS RAHMAWATI</td>
+            <td>80</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>ATIFAH FADHILA ZAYANI</td>
+            <td>80</td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>CAKRA WIBOWO</td>
+            <td>80</td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>DANA SURANTO</td>
+            <td>80</td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>DAVIN AJ WIBOWO</td>
+            <td>80</td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td>ESA TEGAR PUTRA UTAMA</td>
+            <td>80</td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>FATHIMAH</td>
+            <td>80</td>
+          </tr>
+          <tr>
+            <td>16</td>
+            <td>FIRMAN RAMADHAN</td>
+            <td>80</td>
+          </tr>
+          <tr>
+            <td>17</td>
+            <td>HANDHIKA TIA SAPUTRO</td>
+            <td>80</td>
+          </tr>
+          <tr>
+            <td>18</td>
+            <td>KEVIN ADISURYA NUGRAHA</td>
+            <td>80</td>
+          </tr>
+          <tr>
+            <td>19</td>
+            <td>LATIFA</td>
+            <td>80</td>
+          </tr>
+          <tr>
+            <td>20</td>
+            <td>MOH FAJAR ILHAM</td>
+            <td>80</td>
+          </tr>
+          <tr>
+            <td>21</td>
+            <td>MOHAMMAD FERDIANSYAH</td>
+            <td>80</td>
+          </tr>
+          <tr>
+            <td>22</td>
+            <td>MUHAMAD WILDAN ICHSAN</td>
+            <td>80</td>
+          </tr>
+          <tr>
+            <td>23</td>
+            <td>MUHAMMAD FADLAN KAMIL</td>
+            <td>80</td>
+          </tr>
+          <tr>
+            <td>24</td>
+            <td>MUHAMMAD FAQI NUGROHO AZANI</td>
+            <td>80</td>
+          </tr>
+          <tr>
+            <td>25</td>
+            <td>MUHAMMAD RIZQI RAMADHAN</td>
+            <td>80</td>
+          </tr>
+          <tr>
+            <td>26</td>
+            <td>MUHAMMAD SATRIO WIBISONO</td>
+            <td>80</td>
+          </tr>
+          <tr>
+            <td>27</td>
+            <td>PUTRI NABILA</td>
+            <td>80</td>
+          </tr>
+          <tr>
+            <td>28</td>
+            <td>PUTRI NAILAH AZ-ZAHRA</td>
+            <td>80</td>
+          </tr>
+          <tr>
+            <td>29</td>
+            <td>RAFIF DWI PRAYATA</td>
+            <td>80</td>
+          </tr>
+          <tr>
+            <td>30</td>
+            <td>REYNALDO LAMHOT SILALAHI</td>
+            <td>80</td>
+          </tr>
+          <tr>
+            <td>31</td>
+            <td>RIDWAN MUHAMAD HUSEIN</td>
+            <td>80</td>
+          </tr>
+          <tr>
+            <td>32</td>
+            <td>SALMAN ZULKARNAIN</td>
+            <td>80</td>
+          </tr>
+          <tr>
+            <td>33</td>
+            <td>WISNU SYA'BAN TRIANANDA</td>
+            <td>80</td>
+          </tr>
+          <tr>
+            <td>34</td>
+            <td>ZAHRA ALILATUL BARIZA</td>
+            <td>80</td>
+          </tr>
+          <tr>
+            <td>35</td>
+            <td>ZAID ARRAZY</td>
+            <td>80</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script>
+      var btn = $('#button');
+
+      $(window).scroll(function() {
+        if ($(window).scrollTop() > 200) {
+          btn.addClass('show');
+        } else {
+          btn.removeClass('show');
+        }
+      });
+
+      btn.on('click', function(top) {
+        top.preventDefault();
+        $('html, body').animate({scrollTop:0});
+      });
+    </script>
+  </body>
+</html>
