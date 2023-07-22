@@ -60,6 +60,14 @@
       .navbar {
         padding: 10px;
       }
+      form {
+        padding-right: 30px;
+      }
+      @media (max-width: 767px) {
+        form {
+          padding-right: 0;
+        }
+      }
       h2 {
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         font-weight: 28px;
@@ -91,8 +99,8 @@
       </a>
     </nav>
     
-    <div class="d-flex flex-wrap justify-content-center">
-      <form class="m-3 col-4" method="POST" action="">
+    <div class="m-5 d-flex flex-wrap justify-content-center">
+      <form class="col-12 col-md-4 mb-4" method="POST" action="">
         <h2 class="d-flex justify-content-center align-items-center fw-bold"><svg class="me-3" xmlns="http://www.w3.org/2000/svg" width="35" height="auto" fill="currentColor" class="bi bi-person-vcard" viewBox="0 0 16 16">
           <path d="M5 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm4-2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5ZM9 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4A.5.5 0 0 1 9 8Zm1 2.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5Z"/>
           <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2ZM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H8.96c.026-.163.04-.33.04-.5C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1.006 1.006 0 0 1 1 12V4Z"/>
@@ -110,7 +118,7 @@
         <button class="btn btn-primary rounded-1" style="letter-spacing: 0.5px" type="submit">KIRIM</button>
       </form>
 
-      <table class="table-bordered border-dark text-center m-3 col-8 col-sm-7 ">
+      <table class="table-bordered border-dark col-12 col-md-8 text-center">
         <thead class="bg-primary text-light">
           <tr>
             <th>No.</th>
@@ -272,6 +280,7 @@
           <tr>
             <td>31</td>
             <td>RIDWAN MUHAMAD HUSEIN</td>
+          
             <td>80</td>
           </tr>
           <tr>
