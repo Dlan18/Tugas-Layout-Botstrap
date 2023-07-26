@@ -192,10 +192,9 @@ $conn->close();
     </div>
     
     <div class="footer fixed-bottom bg-dark p-3 b-0">
-      <h2 class="d-flex justify-content-center align-items-center text-light h5" style="letter-spacing: 0;">Copyright © SMKN 10 JKT</h2>
+      <h2 class="d-flex justify-content-center align-items-center text-light h5" style="letter-spacing: 0;">Copyright © SMKN 10 Jakarta</h2>
     </div>
 
-    
     <script>
       var btn = $('#button');
 
