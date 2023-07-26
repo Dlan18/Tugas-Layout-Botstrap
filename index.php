@@ -195,6 +195,7 @@ $conn->close();
       <h2 class="d-flex justify-content-center align-items-center text-light h5" style="letter-spacing: 0;">Copyright © SMKN 10 JKT</h2>
     </div>
 
+    
     <script>
       var btn = $('#button');
 
