@@ -104,7 +104,7 @@ $conn->close();
         scale: .95;
       }
       #button:active {
-        scale: .83;
+        scale: .85;
       }
       #button.show {
         opacity: 1;
@@ -136,6 +136,7 @@ $conn->close();
         padding: 11px;
       }
     </style>
+
   </head>
   <body>
     <a id="button" class="d-inline-block bg-primary" title="Kembali Ke Atas">
